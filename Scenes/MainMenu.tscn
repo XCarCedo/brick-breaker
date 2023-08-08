@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cs4wgyo4kxieu"]
+[gd_scene load_steps=8 format=3 uid="uid://cs4wgyo4kxieu"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_dtrp6"]
 [ext_resource type="Texture2D" uid="uid://ftlj0yldaeou" path="res://Assets/UI/blue_button00.png" id="1_itkn0"]
+[ext_resource type="PackedScene" uid="uid://bv675ytfa8q3" path="res://Scenes/Game.tscn" id="2_dfhdo"]
 [ext_resource type="Texture2D" uid="uid://dfovbp5lne8q3" path="res://Assets/UI/blue_button01.png" id="2_u2gwe"]
 [ext_resource type="LabelSettings" uid="uid://cbe6qjmik7pt4" path="res://Assets/Fonts/MenuFont.tres" id="3_liuxt"]
 [ext_resource type="Texture2D" uid="uid://btdwxyyi4yd3b" path="res://Assets/UI/red_button00.png" id="4_o0qhs"]
@@ -15,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dtrp6")
+game_scene = ExtResource("2_dfhdo")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

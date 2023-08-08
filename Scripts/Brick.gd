@@ -8,6 +8,9 @@ var health_textures: Dictionary = {
 }
 var health: int = 4
 
+func _ready():
+	$Sprite2D.set_texture(health_textures[health])
+
 func hit():
 	health -= 1
 	if health == 0:

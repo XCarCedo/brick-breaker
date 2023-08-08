@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bg8lukr0r6vy8"]
+[gd_scene load_steps=3 format=3 uid="uid://bg8lukr0r6vy8"]
 
 [ext_resource type="Texture2D" uid="uid://56e470akmyqt" path="res://Assets/Game/element_red_rectangle.png" id="1_81wt2"]
 [ext_resource type="Script" path="res://Scripts/Brick.gd" id="1_h2i68"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpdtd"]
-size = Vector2(64, 32)
 
 [node name="Brick" type="StaticBody2D" groups=["brick"]]
 disable_mode = 1
@@ -13,5 +10,5 @@ script = ExtResource("1_h2i68")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_81wt2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_xpdtd")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-8, -8, 9, -14, 9, -14, 24, -8, 30, -14, 26, 0, 30, 14, 12, 8, 0, 14, -14, 8, -30, 14, -24, 1, -29, -13)
