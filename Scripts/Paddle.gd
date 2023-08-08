@@ -1,6 +1,7 @@
-extends CharacterBody2D
+extends StaticBody2D
 
-var speed: int = 250
+var speed: int = 10
+var velocity: Vector2 = Vector2.ZERO
 
 func _physics_process(delta):
 	if Input.get_action_strength("ui_right"):
@@ -9,6 +10,6 @@ func _physics_process(delta):
 		velocity.x -= 1
 	
 	velocity.x *= speed
-	move_and_slide()
+	position += velocity
 	
 	velocity.x = lerp(velocity.x, 0.0, 1)
