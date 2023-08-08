@@ -8,6 +8,7 @@ radius = 12.0
 height = 104.0
 
 [node name="Paddle" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_54aos")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

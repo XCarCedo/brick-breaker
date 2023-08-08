@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 window/size/viewport_width=600
 window/size/viewport_height=665
 
+[physics]
+
+2d/default_linear_damp=0.0
+2d/default_angular_damp=0.0
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

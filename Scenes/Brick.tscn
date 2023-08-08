@@ -7,6 +7,7 @@
 size = Vector2(64, 32)
 
 [node name="Brick" type="StaticBody2D" groups=["brick"]]
+disable_mode = 1
 script = ExtResource("1_h2i68")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

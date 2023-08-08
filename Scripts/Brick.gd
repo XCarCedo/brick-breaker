@@ -11,6 +11,7 @@ var health: int = 4
 func hit():
 	health -= 1
 	if health == 0:
+		return 0
 		queue_free()
 	
 	$Sprite2D.set_texture(health_textures[health])

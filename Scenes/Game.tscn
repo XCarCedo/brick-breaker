@@ -1,0 +1,447 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv675ytfa8q3"]
+
+[ext_resource type="PackedScene" uid="uid://bg8lukr0r6vy8" path="res://Scenes/Brick.tscn" id="1_0myj4"]
+[ext_resource type="PackedScene" uid="uid://db8wxejivpxar" path="res://Scenes/Ball.tscn" id="2_gr0ky"]
+[ext_resource type="PackedScene" uid="uid://blrigjbb2c7au" path="res://Scenes/Paddle.tscn" id="3_7srxf"]
+
+[node name="Game" type="Node2D"]
+
+[node name="BrickManager" type="Node2D" parent="."]
+
+[node name="Brick" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 32)
+
+[node name="Brick2" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 32)
+
+[node name="Brick3" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 32)
+
+[node name="Brick4" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 32)
+
+[node name="Brick5" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 32)
+
+[node name="Brick6" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 32)
+
+[node name="Brick7" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 32)
+
+[node name="Brick8" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 32)
+
+[node name="Brick9" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 32)
+
+[node name="Brick10" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 32)
+
+[node name="Brick11" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 32)
+
+[node name="Brick12" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 32)
+
+[node name="Brick13" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 32)
+
+[node name="Brick14" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 32)
+
+[node name="Brick15" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 32)
+
+[node name="Brick16" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 32)
+
+[node name="Brick17" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 32)
+
+[node name="Brick18" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 32)
+
+[node name="Brick19" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 72)
+
+[node name="Brick20" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 72)
+
+[node name="Brick21" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 72)
+
+[node name="Brick22" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 72)
+
+[node name="Brick23" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 72)
+
+[node name="Brick24" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 72)
+
+[node name="Brick25" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 72)
+
+[node name="Brick26" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 72)
+
+[node name="Brick27" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 72)
+
+[node name="Brick28" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 72)
+
+[node name="Brick29" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 72)
+
+[node name="Brick30" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 72)
+
+[node name="Brick31" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 72)
+
+[node name="Brick32" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 72)
+
+[node name="Brick33" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 72)
+
+[node name="Brick34" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 72)
+
+[node name="Brick35" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 72)
+
+[node name="Brick36" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 72)
+
+[node name="Brick37" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 112)
+
+[node name="Brick38" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 112)
+
+[node name="Brick39" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 112)
+
+[node name="Brick40" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 112)
+
+[node name="Brick41" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 112)
+
+[node name="Brick42" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 112)
+
+[node name="Brick43" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 112)
+
+[node name="Brick44" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 112)
+
+[node name="Brick45" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 112)
+
+[node name="Brick46" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 112)
+
+[node name="Brick47" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 112)
+
+[node name="Brick48" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 112)
+
+[node name="Brick49" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 112)
+
+[node name="Brick50" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 112)
+
+[node name="Brick51" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 112)
+
+[node name="Brick52" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 112)
+
+[node name="Brick53" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 112)
+
+[node name="Brick54" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 112)
+
+[node name="Brick55" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 152)
+
+[node name="Brick56" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 152)
+
+[node name="Brick57" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 152)
+
+[node name="Brick58" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 152)
+
+[node name="Brick59" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 152)
+
+[node name="Brick60" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 152)
+
+[node name="Brick61" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 152)
+
+[node name="Brick62" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 152)
+
+[node name="Brick63" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 152)
+
+[node name="Brick64" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 152)
+
+[node name="Brick65" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 152)
+
+[node name="Brick66" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 152)
+
+[node name="Brick67" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 152)
+
+[node name="Brick68" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 152)
+
+[node name="Brick69" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 152)
+
+[node name="Brick70" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 152)
+
+[node name="Brick71" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 152)
+
+[node name="Brick72" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 152)
+
+[node name="Brick73" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 192)
+
+[node name="Brick74" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 192)
+
+[node name="Brick75" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 192)
+
+[node name="Brick76" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 192)
+
+[node name="Brick77" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 192)
+
+[node name="Brick78" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 192)
+
+[node name="Brick79" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 192)
+
+[node name="Brick80" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 192)
+
+[node name="Brick81" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 192)
+
+[node name="Brick82" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 192)
+
+[node name="Brick83" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 192)
+
+[node name="Brick84" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 192)
+
+[node name="Brick85" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 192)
+
+[node name="Brick86" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 192)
+
+[node name="Brick87" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 192)
+
+[node name="Brick88" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 192)
+
+[node name="Brick89" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 192)
+
+[node name="Brick90" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 192)
+
+[node name="Brick91" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 232)
+
+[node name="Brick92" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 232)
+
+[node name="Brick93" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 232)
+
+[node name="Brick94" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 232)
+
+[node name="Brick95" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 232)
+
+[node name="Brick96" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 232)
+
+[node name="Brick97" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 232)
+
+[node name="Brick98" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 232)
+
+[node name="Brick99" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 232)
+
+[node name="Brick100" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 232)
+
+[node name="Brick101" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 232)
+
+[node name="Brick102" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 232)
+
+[node name="Brick103" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 232)
+
+[node name="Brick104" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 232)
+
+[node name="Brick105" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 232)
+
+[node name="Brick106" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 232)
+
+[node name="Brick107" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 232)
+
+[node name="Brick108" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 232)
+
+[node name="Brick109" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 272)
+
+[node name="Brick110" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 272)
+
+[node name="Brick111" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 272)
+
+[node name="Brick112" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 272)
+
+[node name="Brick113" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 272)
+
+[node name="Brick114" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 272)
+
+[node name="Brick115" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 272)
+
+[node name="Brick116" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 272)
+
+[node name="Brick117" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 272)
+
+[node name="Brick118" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 272)
+
+[node name="Brick119" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 272)
+
+[node name="Brick120" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 272)
+
+[node name="Brick121" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 272)
+
+[node name="Brick122" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 272)
+
+[node name="Brick123" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 272)
+
+[node name="Brick124" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 272)
+
+[node name="Brick125" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 272)
+
+[node name="Brick126" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 272)
+
+[node name="Brick127" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 312)
+
+[node name="Brick128" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 312)
+
+[node name="Brick129" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 312)
+
+[node name="Brick130" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 312)
+
+[node name="Brick131" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 312)
+
+[node name="Brick132" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 312)
+
+[node name="Brick133" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 312)
+
+[node name="Brick134" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 312)
+
+[node name="Brick135" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 312)
+
+[node name="Brick136" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(43, 312)
+
+[node name="Brick137" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(107, 312)
+
+[node name="Brick138" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(172, 312)
+
+[node name="Brick139" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(236, 312)
+
+[node name="Brick140" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(301, 312)
+
+[node name="Brick141" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(365, 312)
+
+[node name="Brick142" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(430, 312)
+
+[node name="Brick143" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(494, 312)
+
+[node name="Brick144" parent="BrickManager" instance=ExtResource("1_0myj4")]
+position = Vector2(558, 312)
+
+[node name="Ball" parent="." instance=ExtResource("2_gr0ky")]
+position = Vector2(300, 600)
+
+[node name="Paddle" parent="." instance=ExtResource("3_7srxf")]
+position = Vector2(300, 640)
