@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg8lukr0r6vy8"]
+
+[ext_resource type="Texture2D" uid="uid://56e470akmyqt" path="res://Assets/Game/element_red_rectangle.png" id="1_81wt2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpdtd"]
+size = Vector2(64, 32)
+
+[node name="Brick" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_81wt2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xpdtd")
