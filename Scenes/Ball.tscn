@@ -13,10 +13,10 @@ radius = 12.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_jgyau"]
 radius = 13.0
 
-[node name="Ball" type="RigidBody2D"]
+[node name="Ball" type="RigidBody2D" groups=["ball"]]
 physics_material_override = SubResource("PhysicsMaterial_1usyc")
 gravity_scale = 0.0
-linear_velocity = Vector2(0, -250)
+linear_velocity = Vector2(0, -400)
 script = ExtResource("1_376fk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

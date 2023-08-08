@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bv675ytfa8q3"]
+[gd_scene load_steps=8 format=3 uid="uid://bv675ytfa8q3"]
 
 [ext_resource type="PackedScene" uid="uid://bg8lukr0r6vy8" path="res://Scenes/Brick.tscn" id="1_0myj4"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_yygrd"]
 [ext_resource type="PackedScene" uid="uid://db8wxejivpxar" path="res://Scenes/Ball.tscn" id="2_gr0ky"]
 [ext_resource type="PackedScene" uid="uid://blrigjbb2c7au" path="res://Scenes/Paddle.tscn" id="3_7srxf"]
 
@@ -10,7 +11,11 @@ b = Vector2(0, 665)
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_75wct"]
 b = Vector2(-600, 0)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_3s0id"]
+b = Vector2(600, 0)
+
 [node name="Game" type="Node2D"]
+script = ExtResource("1_yygrd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -481,3 +486,11 @@ position = Vector2(600, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boundries/Up"]
 shape = SubResource("SegmentShape2D_75wct")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, 660)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("SegmentShape2D_3s0id")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

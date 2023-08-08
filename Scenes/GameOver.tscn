@@ -1,0 +1,116 @@
+[gd_scene load_steps=9 format=3 uid="uid://mi1jlfhnuii8"]
+
+[ext_resource type="Script" path="res://Scripts/GameOver.gd" id="1_or8nq"]
+[ext_resource type="FontFile" uid="uid://7g3h728jkjqd" path="res://Assets/Fonts/kenvector_future.ttf" id="2_d6qvf"]
+[ext_resource type="Texture2D" uid="uid://ftlj0yldaeou" path="res://Assets/UI/blue_button00.png" id="3_8j84c"]
+[ext_resource type="Texture2D" uid="uid://dfovbp5lne8q3" path="res://Assets/UI/blue_button01.png" id="4_g7vmk"]
+[ext_resource type="LabelSettings" uid="uid://cbe6qjmik7pt4" path="res://Assets/Fonts/MenuFont.tres" id="5_5du8v"]
+[ext_resource type="Texture2D" uid="uid://btdwxyyi4yd3b" path="res://Assets/UI/red_button00.png" id="6_ma7h7"]
+[ext_resource type="Texture2D" uid="uid://b8j3s3rfk3v4q" path="res://Assets/UI/red_button01.png" id="7_3ce8i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_a3m50"]
+font = ExtResource("2_d6qvf")
+font_size = 52
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_or8nq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14902, 0.14902, 0.14902, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -206.5
+offset_top = -148.5
+offset_right = 206.5
+offset_bottom = -86.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "GAME OVER! "
+label_settings = SubResource("LabelSettings_a3m50")
+
+[node name="RetryButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = 11.5
+offset_right = 95.0
+offset_bottom = 60.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_8j84c")
+texture_pressed = ExtResource("4_g7vmk")
+texture_hover = ExtResource("4_g7vmk")
+
+[node name="Label" type="Label" parent="RetryButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.5
+offset_top = -11.5
+offset_right = 33.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "RETRY"
+label_settings = ExtResource("5_5du8v")
+
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = 68.5
+offset_right = 95.0
+offset_bottom = 117.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6_ma7h7")
+texture_pressed = ExtResource("7_3ce8i")
+texture_hover = ExtResource("7_3ce8i")
+
+[node name="Label" type="Label" parent="QuitButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "QUIT"
+label_settings = ExtResource("5_5du8v")
+
+[connection signal="pressed" from="RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
