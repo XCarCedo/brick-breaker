@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://cs4wgyo4kxieu"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_dtrp6"]
+[ext_resource type="Texture2D" uid="uid://ftlj0yldaeou" path="res://Assets/UI/blue_button00.png" id="1_itkn0"]
+[ext_resource type="Texture2D" uid="uid://dfovbp5lne8q3" path="res://Assets/UI/blue_button01.png" id="2_u2gwe"]
+[ext_resource type="LabelSettings" uid="uid://cbe6qjmik7pt4" path="res://Assets/Fonts/MenuFont.tres" id="3_liuxt"]
+[ext_resource type="Texture2D" uid="uid://btdwxyyi4yd3b" path="res://Assets/UI/red_button00.png" id="4_o0qhs"]
+[ext_resource type="Texture2D" uid="uid://b8j3s3rfk3v4q" path="res://Assets/UI/red_button01.png" id="5_i4adx"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dtrp6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14902, 0.14902, 0.14902, 1)
+
+[node name="PlayButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = 90.5
+offset_right = 95.0
+offset_bottom = 139.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_itkn0")
+texture_pressed = ExtResource("2_u2gwe")
+texture_hover = ExtResource("2_u2gwe")
+
+[node name="Label" type="Label" parent="PlayButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.5
+offset_top = -11.5
+offset_right = 33.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "START"
+label_settings = ExtResource("3_liuxt")
+
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = 152.5
+offset_right = 95.0
+offset_bottom = 201.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_i4adx")
+texture_pressed = ExtResource("4_o0qhs")
+texture_hover = ExtResource("4_o0qhs")
+
+[node name="Label" type="Label" parent="QuitButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -13.0
+offset_right = 20.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "QUIT"
+label_settings = ExtResource("3_liuxt")
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

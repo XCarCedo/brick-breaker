@@ -1,0 +1,6 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cbe6qjmik7pt4"]
+
+[ext_resource type="FontFile" uid="uid://7g3h728jkjqd" path="res://Assets/Fonts/kenvector_future.ttf" id="1_foryu"]
+
+[resource]
+font = ExtResource("1_foryu")
